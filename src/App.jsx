@@ -83,8 +83,8 @@ function App() {
   return (
     <div className={style.app}>
       {/* 제목 */}
-      <h1>to
-      <br />To-Do List<br />
+      <h1>NNN
+      <br />TODO<br />
       </h1>
       {/* 할 일 추가하는 컴포넌트 */}
       <TodoInput addTodo={addTodo} />
