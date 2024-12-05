@@ -23,13 +23,13 @@ jobs:
       # 3. 의존성 설치
       - name: Install dependencies
         run: |
-          cd class2/todo
+          cd /todo
           npm install
 
       # 4. 빌드
       - name: Build project
         run: |
-          cd class2/todo
+          cd /todo
           npm run build
 
       # 5. 배포
@@ -37,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: class2/todo/build
+          publish_dir: /todo/build
